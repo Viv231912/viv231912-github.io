@@ -165,8 +165,34 @@ function hasReached(el){
 /* ----------- Carousel Animation -------------- */
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel_btn-right');
+const prevButton = document.querySelector('.carousel_btn-left');
+const carouselNav = document.querySelector('.carousel-nav');
+const dots = Array.from(carouselNav.children); 
 
-console.log(slides);
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+
+//arrange the slides next to on another
+// slides[0].style.left = slideWidth * 0 + 'px';
+// slides[1].style.left = slideWidth * 1 + 'px';
+
+
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+}
+slides.forEach(setSlidePosition);
+ 
+//when click right, move slide to right
+nextButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector('.current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const amountToMove = nextSlide.style.left;
+    track.style.transform = 'translateX(-' + amountToMove + ')';
+    
+
+}) 
+
 
 
 
