@@ -853,21 +853,22 @@ section.discovery.section {
 /* --------------Carousel -------------- */
 .carousel {
     position: relative;
-    height:500px;
-    width: 50%;
+    height:600px;
+    width: 80%;
     margin: 0 auto; 
 }
 
 .carousel-img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     object-fit: cover;
 }
 
 .carousel_track-container {
     background: black;
     height: 100%;
-    position: relative;
+    position: relative; 
+    overflow: hidden;
 }
 
 .carousel_track {
@@ -876,9 +877,10 @@ section.discovery.section {
     list-style: none;
     position: relative;
     height: 100%;
+    transition: transform 250ms ease-in;
 }
 
-.carousel-slide {
+.carousel_slide {
     position: absolute;
     top: 0;
     bottom: 0;

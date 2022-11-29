@@ -21,11 +21,7 @@ const toggle_btn = document.querySelector(".toggle-btn");
 
 const hamburger = document.querySelector(".hamburger");
 
-window.addEventListener("scroll", () => {
-    activeLink();
-    if(!skillsPlayed) skillsCounter();  
-    // if(!mlPlayed) mlCounter();
-});
+//  
 
 function updateCount(num, maxNum) {
     let currentNum = +num.innerText;
@@ -165,33 +161,49 @@ function hasReached(el){
 /* ----------- Carousel Animation -------------- */
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
+
 const nextButton = document.querySelector('.carousel_btn-right');
 const prevButton = document.querySelector('.carousel_btn-left');
+
 const carouselNav = document.querySelector('.carousel-nav');
 const dots = Array.from(carouselNav.children); 
 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 
+
 //arrange the slides next to on another
 // slides[0].style.left = slideWidth * 0 + 'px';
 // slides[1].style.left = slideWidth * 1 + 'px';
 
-
+//arrange slides next to each other
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 }
 slides.forEach(setSlidePosition);
- 
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+
+//when i click left, move slide to the left
+prevButton.addEventListener('click', e => {
+    const currentSlide = document.querySelector('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+
+    moveToSlide(track, currentSlide, prevSlide);
+})
+
 //when click right, move slide to right
 nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
+    const currentSlide = document.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = nextSlide.style.left;
-    track.style.transform = 'translateX(-' + amountToMove + ')';
-    
-
+   
+    moveToSlide(track, currentSlide, nextSlide);
 }) 
+
 
 
 
