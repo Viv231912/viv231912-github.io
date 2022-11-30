@@ -853,19 +853,19 @@ section.discovery.section {
 /* --------------Carousel -------------- */
 .carousel {
     position: relative;
-    height:600px;
+    height:800px;
     width: 80%;
     margin: 0 auto; 
 }
 
 .carousel-img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    padding: 2rem; 
     object-fit: cover;
 }
 
 .carousel_track-container {
-    background: black;
     height: 100%;
     position: relative; 
     overflow: hidden;
@@ -877,7 +877,7 @@ section.discovery.section {
     list-style: none;
     position: relative;
     height: 100%;
-    transition: transform 250ms ease-in;
+    transition:  ease-in-out;
 }
 
 .carousel_slide {
@@ -891,21 +891,21 @@ section.discovery.section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: transparent;
+    background:transparent;
     border: none;
     cursor: pointer;
 }
 
 .carousel_btn-left {
-    left: -30px;
+    left: -45px;
 }
 
 .carousel_btn-right {
-    right: -30px;
+    right: -45px;
 }
 
 .carousel-btn img{
-    width: 20px;
+    width: 30px;
 }
 
 .carousel-nav{
@@ -921,16 +921,50 @@ section.discovery.section {
     height: 10px;
     background: rgba(0 , 0, 0 , 0.3);
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .carousel-indicator.current-slide {
     background: rgba(0, 0, 0, 0.75);
 }
 
+.is-hidden {
+    display: none;
+}
 
 
+/* ---------------Develop Section------------------ */
 
+.develop-box {
+    background-color: var(--bg-color-2);
+    padding: 6rem 7rem;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    transition: 0.3s background-color;
+    
+}
 
+.develop-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(2, 120px);
+    justify-content: space-around;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.develop-img {
+    width: 100%;
+}
+
+.develop-title {
+    padding-top: 2rem;
+}
+
+.goal-desc {
+    padding-left: 1rem;
+}
 
 
 
@@ -1831,6 +1865,8 @@ footer .social-media {
         left: 20%;
         top: 101%;
     }
+
+    
 }
 
 /* -----------500PX Screens-------------- */
