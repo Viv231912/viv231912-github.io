@@ -102,9 +102,9 @@ a {
     text-decoration: none;
 }
 
-ul {
+/* ul {
     list-style: none;
-}
+} */
 
 /* -----------Reusable CSS Code-------------- */
 .container {
@@ -351,6 +351,7 @@ header.scrolled .logo {
     display: flex;
     align-items: center;
     width: 100%;
+    list-style: none;
 }
 
 .nav-link {
@@ -777,6 +778,10 @@ section.discovery.section {
     
 }
 
+.define-desc {
+    font-weight: normal;
+}
+
 .discovery-wrap {
     display: grid;
     grid-template-columns: repeat(5, 100px);
@@ -823,7 +828,7 @@ section.discovery.section {
 
 .d-summary {
     color: var(--text-color-1);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     padding-left: 4rem;
     margin-bottom: 1rem;
@@ -934,7 +939,9 @@ section.discovery.section {
 
 
 /* ---------------Develop Section------------------ */
-
+.develop {
+    padding-top: 7rem;
+}
 .develop-box {
     background-color: var(--bg-color-2);
     padding: 6rem 7rem;
@@ -965,6 +972,124 @@ section.discovery.section {
 .goal-desc {
     padding-left: 1rem;
 }
+
+
+
+.develop-desc {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    transition: 0.3s color;
+}
+
+
+
+.sub_heading {
+    color:var(--text-color-1);
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.3s color;
+
+}
+
+.painpoint-list {
+    color: var(--text-color-1);
+    font-size: 1.3rem;
+    text-align: start;
+    margin: 0;
+    font-weight: 300;
+}
+
+.list-container {
+    padding-left: 6rem;
+}
+
+/* -------------HMW section------------------ */
+.hmw-box {
+    background-color: var(--bg-color-2);
+    padding: 6rem 7rem;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.hmw-wrap {
+    display: grid;
+    grid-template-rows: repeat(4, 60px);
+    justify-content: flex-end;
+    margin-top: 4rem;
+}
+
+.sub_heading.hmw-title{
+    color: var(--heading-color);
+    text-transform: none;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--main-color-2);
+    padding: 0.13rem 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.3s color;
+}
+
+.hmw-desc {
+    color: var(--text-color-1);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    position: relative;
+}
+
+span {
+    font-weight: bold;
+}
+
+.ideation-text-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-around;
+    margin-top: 3rem;
+    text-align: center;
+    column-gap: 10rem;
+}
+
+.sub_heading.ideation-title {
+    color: var(--heading-color);
+    text-transform: none;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    padding: 0.13rem 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.3s color;
+}
+
+.develop-desc-ideation {
+    text-align: left;
+    font-size: 1.3rem;
+    
+}
+
+.ideation-title {
+    color: var(--heading-color);
+    text-transform: none;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--main-color-2);
+    padding: 0.13rem 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    transition: 0.3s color;
+    margin-top: 5rem;
+}
+
+
 
 
 
