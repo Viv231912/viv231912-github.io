@@ -158,7 +158,7 @@ function hasReached(el){
 // }  
 
 
-/* ----------- Carousel Animation -------------- */
+/* ----------- Define Carousel Animation -------------- */
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
 
@@ -197,10 +197,10 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden');
-    }else if (targetIndex === slides.length - 1) {
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
-    }else {
+    } else {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.remove('is-hidden');
     }
@@ -208,7 +208,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
 //when i click left, move slide to the left
 prevButton.addEventListener('click', e => {
-    const currentSlide = document.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = carouselNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
@@ -221,7 +221,7 @@ prevButton.addEventListener('click', e => {
 
 //when click right, move slide to right
 nextButton.addEventListener('click', e => {
-    const currentSlide = document.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
     const currentDot = carouselNav.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
@@ -239,7 +239,7 @@ carouselNav.addEventListener('click', e => {
 
     if (!targetDot) return;
 
-    const currentSlide = document.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const currentDot = carouselNav.querySelector('.current-slide'); 
     const targetIndex = dots.findIndex(dot => dot === targetDot)
     const targetSlide = slides[targetIndex];
@@ -251,8 +251,99 @@ carouselNav.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
 })
 
+/* ----------- Develop Carousel Animation -------------- */
+const developTrack = document.querySelector('.develop_carousel_track');
+
+const developSlides = Array.from(developTrack.children);
+console.log(developSlides)
+const developNextButton = document.querySelector('.develop_carousel_btn-right');
+const developPrevButton = document.querySelector('.develop_carousel_btn-left');
+
+const developCarouselNav = document.querySelector('.develop_carousel-nav');
+const developDots = Array.from(developCarouselNav.children); 
+console.log(developDots)
+const developSlideWidth = developSlides[0].getBoundingClientRect().width;
 
 
+
+//arrange the slides next to on another
+// slides[0].style.left = slideWidth * 0 + 'px';
+// slides[1].style.left = slideWidth * 1 + 'px';
+
+//arrange slides next to each other
+const developSetSlidePosition = (slide, index) => {
+    slide.style.left = developSlideWidth * index + 'px';
+}
+developSlides.forEach(developSetSlidePosition);
+
+const developMoveToSlide = (developTrack, developCurrentSlide, developTargetSlide) => {
+    developTrack.style.transform = 'translateX(-' + developTargetSlide.style.left + ')';
+    developCurrentSlide.classList.remove('develop_current-slide');
+    developTargetSlide.classList.add('develop_current-slide');
+}
+
+const developUpdateDots = (developCurrentDot, developTargetDot) => {
+    developCurrentDot.classList.remove('develop_current-slide');
+    developTargetDot.classList.add('develop_current-slide');
+}
+
+const developHideShowArrows = (developSlides, developPrevButton, developNextButton, targetIndex) => {
+    if (targetIndex === 0) {
+        developPrevButton.classList.add('develop_is-hidden');
+        developNextButton.classList.remove('develop_is-hidden');
+    } else if (targetIndex === developSlides.length - 1) {
+        developPrevButton.classList.remove('develop_is-hidden');
+        developNextButton.classList.add('develop_is-hidden');
+    } else {
+        developPrevButton.classList.remove('develop_is-hidden');
+        developNextButton.classList.remove('develop_is-hidden');
+    }
+}
+
+//when i click left, move slide to the left
+developPrevButton.addEventListener('click', e => {
+    const currentSlide = developTrack.querySelector('.develop_current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = developCarouselNav.querySelector('.develop_current-slide');
+    const prevDot = currentDot.previousElementSibling;
+    const prevIndex = developSlides.findIndex(slide => slide === prevSlide);
+
+    developMoveToSlide(developTrack, currentSlide, prevSlide);
+    developUpdateDots(currentDot, prevDot);
+    developHideShowArrows(developSlides, developPrevButton, developNextButton, prevIndex)
+});
+
+//when click right, move slide to right
+developNextButton.addEventListener('click', e => {
+    const currentSlide = developTrack.querySelector('.develop_current-slide');
+    const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = developCarouselNav.querySelector('.develop_current-slide');
+    const nextDot = currentDot.nextElementSibling;
+    const nextIndex = developSlides.findIndex(slide => slide === nextSlide);
+
+    developMoveToSlide(developTrack, currentSlide, nextSlide);
+    developUpdateDots(currentDot, nextDot);
+    developHideShowArrows(developSlides, developPrevButton, developNextButton, nextIndex);
+}); 
+
+//when click the nav indicator, move to that slide
+
+developCarouselNav.addEventListener('click', e => {
+    const targetDot = e.target.closest('button');
+
+    if (!targetDot) return;
+
+    const currentSlide = developTrack.querySelector('.develop_current-slide');
+    const currentDot = developCarouselNav.querySelector('.develop_current-slide'); 
+    const targetIndex = developDots.findIndex(dot => dot === targetDot)
+    const targetSlide = developSlides[targetIndex];
+
+    developMoveToSlide(developTrack, currentSlide, targetSlide);
+
+    developUpdateDots(currentDot, targetDot);
+    
+    developHideShowArrows(developSlides, developPrevButton, developNextButton, targetIndex);
+})
 
 
 
