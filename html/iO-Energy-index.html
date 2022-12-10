@@ -72,19 +72,25 @@
       <!------------------- About overview-area ---------------------->
 
       <section class="about text_section" id="about">
-        <div class="grid">
-          <div class="about-heading">
+        <div class="overview_grid">
+          <div class="about-heading overview_sum">
             <h3 class="title">Overview</h3>
+          </div>
+          <div class="overview_summary">
             <p class="text">
               iO Energy delivers affordable renewable energy to homes and
               businesses. They offer consumers an effective way to reduce their
               energy costs with smart electricity meters and ‘time-of-use’
               pricing.
             </p>
-          </div>
-          
-            <div class="bout-heading">
+          </div>  
+        </div>
+
+          <div class="overview_grid">
+            <div class="about-heading overview_sum">
               <h3 class="title">Goal</h3>
+            </div>
+            <div class="overview_summary">
               <p class="text">
                 The goal was to redesign the current customer portal to create a
                 smooth user experience for iO Energy customers. This included
@@ -93,26 +99,36 @@
                 visualisations on pages, and the overall navigation of data
                 reports.
               </p>
-            </div>
-            <div class="about-heading">
+            </div>  
+          </div>
+
+          <div class="overview_grid">
+            <div class="about-heading overview_sum">
               <h3 class="title">Team</h3>
+            </div>
+            <div class="overview_summary">
               <p class="text">
                 I worked closely with 6 other classmates, since we all located
                 in different states throughout Australia. We maintained regular
                 check-ins to make sure our work contiuned to stay aligned.
               </p>
-            </div>
-            <div class="about-heading">
+            </div>  
+          </div>
+          
+          <div class="overview_grid">
+            <div class="about-heading overview_sum">
               <h3 class="title">Problem Statement</h3>
+            </div>
+            <div class="overview_summary">
               <p class="text p-statement">
                 Australian energy consumers, who are cost and environmentally
                 conscious, are unaware of how they can optimise energy usage to
                 reduce their costs and carbon footprint as they lack relevant
                 data or personalised insights to make smarter decisions.
               </p>
-            </div>
+            </div>  
           </div>
-      </section>
+        </section>
 
       <!------------------- Discovery area ---------------------->
 
@@ -218,11 +234,11 @@
       </section>
           
       <section class="research_findings text_section">
-          <div class="grid">
-              <div class="about-heading survey">
+          <div class="research_grid">
+              <div class="about-heading survey_sum ">
                 <h3 class="title">Research Finding</h3>
               </div>
-              <div class="text res-sum">
+              <div class="text res-sum survey_summary">
                 <p>
                   After conducting research, it was apparent that the initial
                   problem statement did not fully align with the findings. The
@@ -232,11 +248,11 @@
               </div>
           </div>
 
-            <div class="grid">
-              <div class="about-heading survey">
+            <div class="research_grid">
+              <div class="about-heading survey_sum">
                 <h3 class="title">Problem Statement 2.0</h3>
               </div>
-              <div class="text p-statement2">
+              <div class="text p-statement2 survey_summary">
                 <p>
                   Australian energy consumers, who are cost and environmentally
                   conscious, are unaware of how they can optimise energy usage to
@@ -462,15 +478,19 @@
        
       
         <section class="text_section">
-        <div class="ideation text-box">
-          <h1 class="ideation-title sub_heading">Ideation</h1>
-          <p class="text">
+          <div class="research_grid">
+            <div class="about-heading ideation_sum ">
+              <h3 class="title">Ideation</h3>
+            </div>
+            <div class="res-sum ideation_summary">
+              <p class="text">
               To address our persona Olivia's key pain points, brainstorming session were conducted where how might we
               statements were used to work through her pain points. The key themes and ideas that came out of the
               brainstorming sessions and created an MVP matrix to decide on what could achieve and to re-write her stories.
-            </p>
-          
+              </p>
+            </div>
         </div>
+   
         </section>
       
      
@@ -504,18 +524,22 @@
             </section>
            
             <section class="text_section">
-            <div class="ideation text-box">
+              <div class="research_grid">
+                <div class="about-heading develop_sum">
              
-                <h1 class="ideation-title sub_heading">The solutions</h1>
-              
-              
-                <p class="text">
-                  The <span>User Flow</span> and <span>Information Architecture</span> was developed to ensure that the customer portal fulfilled the requirements of users as defined through the results of the research. The design of the portal is intended to be simple to use and allows decisions to be made intuitively by users.
-                  <br>
-                  The storyboard was also developed with two new features which iO Energy could take into consideration for phase two of the development.
-                </p>
-              
-            </div>
+                  <h3 class="title">The solutions</h3>
+                </div>
+                <div class="develop_summary">
+                  <p class="text">
+                    The <span>User Flow</span> and <span>Information Architecture</span> was developed to ensure that the customer portal fulfilled the requirements of users as defined through the results of the research. The design of the portal is intended to be simple to use and allows decisions to be made intuitively by users.
+                    <br>
+                    The storyboard was also developed with two new features which iO Energy could take into consideration for phase two of the development.
+                  </p>
+                </div>
+                 
+                
+              </div>
+           
             </section>
             
             <section class ="develop_carousels img_section">
@@ -606,13 +630,13 @@
         
             <section class="wireframe_carousels img_section">
               <div class="wireframe-carousel">
-                <button class="wireframe-btn wireframe_carousel_btn-left wireframe_is-hidden">
+                <button class="wireframe-btn carousel_btn-left is-hidden">
                   <img src="../image/left-arrow.svg" alt="" />
                 </button>
             
                 <div class="wireframe_carousel_track--container">
-                  <ul class="wireframe_carousel_track">
-                    <li class="wireframe_carousel_slide wireframes_current-slide">
+                  <ul class="carousel_track">
+                    <li class="wireframe_carousel_slide current-slide">
                       <img class="wireframe_carousel-img" src="../image/wireframe-home.png" alt="home" />
                     </li>
                     <li class="wireframe_carousel_slide">
@@ -631,11 +655,11 @@
             
                   </ul>
                 </div>
-                <button class="wireframe_carousel-btn wireframe_carousel_btn-right">
+                <button class="wireframe_carousel-btn carousel_btn-right">
                   <img src="../image/right-arrow.svg" alt="" />
                 </button>
             
-                <div class="wireframe_carousel-nav">
+                <div class="carousel-nav">
                   <button class="wireframe_carousel-indicator wireframe_current-slide"></button>
                   <button class="wireframe_carousel-indicator"></button>
                   <button class="wireframe_carousel-indicator"></button>

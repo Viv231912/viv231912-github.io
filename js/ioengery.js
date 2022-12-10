@@ -21,7 +21,7 @@ const toggle_btn = document.querySelector(".toggle-btn");
 
 const hamburger = document.querySelector(".hamburger");
 
-//  
+
 
 function updateCount(num, maxNum) {
     let currentNum = +num.innerText;
@@ -159,13 +159,13 @@ function hasReached(el){
 
 
 /* ----------- Define Carousel Animation -------------- */
-const track = document.querySelector('.carousel_track');
+const track = document.querySelectorAll('.carousel_track');
 const slides = Array.from(track.children);
 
-const nextButton = document.querySelector('.carousel_btn-right');
-const prevButton = document.querySelector('.carousel_btn-left');
+const nextButton = document.querySelectorAll('.carousel_btn-right');
+const prevButton = document.querySelectorAll('.carousel_btn-left');
 
-const carouselNav = document.querySelector('.carousel-nav');
+const carouselNav = document.querySelectorAll('.carousel-nav');
 const dots = Array.from(carouselNav.children); 
 
 const slideWidth = slides[0].getBoundingClientRect().width;
@@ -206,13 +206,30 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
+    const currentSlide = track.querySelectorAll('.current-slide');
+    const prevSlide = currentSlide.previousElementSibling;
+    const nextSlide = currentSlide.nextElementSibling;
+    const targetSlide = slides[targetIndex];
+
+
+    const targetDot = e.target.closest('button');
+    const currentDot = carouselNav.querySelectorAll('.current-slide');
+    const prevDot = currentDot.previousElementSibling;
+    const nextDot = currentDot.nextElementSibling;
+
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+    const targetIndex = dots.findIndex(dot => dot === targetDot)
+
+
+
 //when i click left, move slide to the left
 prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = carouselNav.querySelector('.current-slide');
-    const prevDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+    // const currentSlide = track.querySelector('.current-slide');
+    // const prevSlide = currentSlide.previousElementSibling;
+    // const currentDot = carouselNav.querySelector('.current-slide');
+    // const prevDot = currentDot.previousElementSibling;
+    // const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
@@ -221,11 +238,11 @@ prevButton.addEventListener('click', e => {
 
 //when click right, move slide to right
 nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = carouselNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+    // const currentSlide = track.querySelector('.current-slide');
+    // const nextSlide = currentSlide.nextElementSibling;
+    // const currentDot = carouselNav.querySelector('.current-slide');
+    // const nextDot = currentDot.nextElementSibling;
+    // const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
@@ -239,10 +256,10 @@ carouselNav.addEventListener('click', e => {
 
     if (!targetDot) return;
 
-    const currentSlide = track.querySelector('.current-slide');
-    const currentDot = carouselNav.querySelector('.current-slide'); 
-    const targetIndex = dots.findIndex(dot => dot === targetDot)
-    const targetSlide = slides[targetIndex];
+    // const currentSlide = track.querySelector('.current-slide');
+    // const currentDot = carouselNav.querySelector('.current-slide'); 
+    // const targetIndex = dots.findIndex(dot => dot === targetDot)
+    // const targetSlide = slides[targetIndex];
 
     moveToSlide(track, currentSlide, targetSlide);
 

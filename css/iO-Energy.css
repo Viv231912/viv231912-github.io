@@ -16,7 +16,7 @@
 }
 
 body {
-    --bg-color: hsl(var(--hue-1), 100%, 97%);
+    --bg-color: hsl(var(--hue-1), 100%, 99%);
     --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
     --bg-color-2: #fff;
     --bg-color-3: hsl(var(--hue-1), 100%, 98%);
@@ -275,7 +275,7 @@ a {
 
 .img_section {
     position: relative;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 
@@ -336,9 +336,10 @@ a {
     position: relative;
     width: 100%;
     max-width: 75rem;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
     margin: 0 auto;
 }
+
 
 
 
@@ -569,18 +570,9 @@ body.open .hamburger .bar:last-child {
     align-items: center;
 }
 
-.about .text {
-    margin: 1rem 1rem 3rem 1rem;
-}
 
-.about .p-statement {
-    margin: 2rem 3rem;
-}
 
-p.text.p-statement {
-    margin: 0;
-    padding: 2rem 4rem 0 4rem;
-}
+
 
 .about-grid {
     display: grid;
@@ -725,7 +717,7 @@ p.text.p-statement {
 
 .title span{
     text-transform: none;
-    font-size: 1rem;
+ font-size: 1rem;
 }
 .p-statement,
 .p-statement2 {
@@ -758,6 +750,51 @@ p.text.p-statement {
     row-gap: 100px; */
     padding: 2rem 6rem;
     position: relative;
+}
+
+.research_grid,
+.overview_grid {
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+.survey_sum,
+.ideation_sum,
+.develop_sum,
+.overview_sum {
+    position: relative;
+    margin: 79px 0px 10px calc((100% - 1055px) * 0.5);
+    left: 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+}
+
+
+
+.survey_summary,
+.ideation_summary,
+.develop_summary,
+.overview_summary {
+    width: 760px;
+    height: auto;
+}
+
+.research_grid .survey_summary,
+.research_grid .ideation_summary,
+.research_grid .develop_summary,
+.overview_grid .overview_summary {
+    position: relative;
+    margin: 72px 0px 54px calc((100% - 1055px) * 0.5);
+    left: 340px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
 }
 
 .survey-grid {
@@ -805,6 +842,12 @@ p.text.p-statement {
 
 .sub-heading.survey {
     padding: none;
+}
+
+.research_findings.text_section {
+    margin-top: 3rem;
+    height: auto;
+    width: 100%;
 }
 
 /* -------------------Define ------------------- */
@@ -952,7 +995,7 @@ p.text.p-statement {
 }
 
 .carousel-btn img{
-    width: 30px;
+    width: 40px;
 }
 
 .carousel-nav{
@@ -1123,7 +1166,7 @@ span {
     position:relative;
     width: 100%;
     max-width: 75rem;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
     margin: 0 auto;
 }
 
