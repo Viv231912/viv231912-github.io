@@ -993,6 +993,7 @@ body.open .hamburger .bar:last-child {
 
 .carousel-button > img {
     width: 40px;
+    
 }
 
 .carousel-button:hover,
@@ -1112,7 +1113,6 @@ body.open .hamburger .bar:last-child {
     color:var(--text-color-1);
     font-size: 1.4rem;
     letter-spacing: 0.5px;
-    padding-left: 4rem;
     margin-bottom: 1rem;
     font-weight: 500;
     transition: 0.3s color;

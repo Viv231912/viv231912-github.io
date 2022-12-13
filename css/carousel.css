@@ -1,4 +1,4 @@
-.carousel {
+/* .carousel {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -93,4 +93,24 @@
 
 .carousel_track-container.persona1 {
     width: 50%;
+} */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
 }
