@@ -200,36 +200,31 @@
         </div>
       </section>    
           
-      <section class="research_insights-image">
-          <div class="carousel">
-            <button class="carousel-btn carousel_btn-left is-hidden">
+      <section aria-label="Newest Photos" class="research_insights-image">
+          <div class="carousel" data-carousel >
+            <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
               <img src="../image/left-arrow.svg" alt="" />
             </button>
           
             <div class="carousel_track-container">
-              <ul class="carousel_track">
-                <li class="carousel_slide current-slide">
-                  <img class="carousel-img" src="../image/Survey summary.png" alt="survey insights" />
+              <ul class="carousel_track" data-slides>
+                <li class="slide" data-active>
+                  <img class="carousel-img  research-img" src="../image/Survey summary.png" alt="survey insights" />
                 </li>
-                <li class="carousel_slide">
-                  <img class="carousel-img" src="../image/survey insights.png" alt="interview insights" />
+                <li class="slide">
+                  <img class="carousel-img research-img" src="../image/survey insights.png" alt="interview insights" />
                 </li>
-                <li class="carousel_slide">
-                  <img class="carousel-img" src="../image/Interviews.png" alt="Persona 1" />
+                <li class="slide">
+                  <img class="carousel-img research-img" src="../image/Interviews.png" alt="interview result" />
                 </li>
           
               </ul>
             </div>
           
-            <button class="carousel-btn carousel_btn-right">
+            <button class="carousel-btn carousel-button next" data-carousel-button="next">
               <img src="../image/right-arrow.svg" alt="" />
             </button>
           
-            <div class="carousel-nav">
-              <button class="carousel-indicator current-slide"></button>
-              <button class="carousel-indicator"></button>
-              <button class="carousel-indicator"></button>
-            </div>
           </div>
       </section>
           
@@ -264,12 +259,7 @@
       </section>
           
           
-           
-         
-           
-          
-        
-      <!------------------- Define area ---------------------->
+     <!------------------- Define area ---------------------->
 
       <section class="define section">
         <div class="container">
@@ -315,7 +305,7 @@
                     </div> -->
             
          <section class="research_summary text_section">
-          <div class="container">
+          <div class="research_summary_grid">
             <div class="text-box d-summary">
               <p class="text">
                 After the interviews and user testing, insights were organised
@@ -344,36 +334,32 @@
           </div>
          </section>
          
-        <section class="refine-images img_section">
-          <div class="carousel">
-          <button class="carousel-btn carousel_btn-left is-hidden">
+        <section aria-label="Newest Photos" class="refine-images img_section">
+          <div class="carousel" data-carousel>
+            <button class="carousel-btn carousel-button prev"  data-carousel-button="prev" >
             <img src="../image/left-arrow.svg" alt="" />
           </button>
         
           <div class="carousel_track-container">
-            <ul class="carousel_track">
-              <li class="carousel_slide current-slide">
+            <ul class="carousel_track" data-slides>
+              <li class="slide" data-active>
                 <img class="carousel-img" src="../image/35 Affinity Map.png" alt="Affinity map" />
               </li>
-              <li class="carousel_slide">
+              <li class="slide">
                 <img class="carousel-img" src="../image/36 Empathy Map.png" alt="Empathy map" />
               </li>
-              <li class="carousel_slide">
-                <img class="carousel-img" src="../image/Personas 1.png" alt="Persona 1" />
+              <li class="slide">
+                <img class="carousel-img persona1" src="../image/Personas 1.png" alt="Persona 1" />
               </li>
         
             </ul>
           </div>
         
-          <button class="carousel-btn carousel_btn-right">
+          <button class="carousel-button next"  data-carousel-button="next">
             <img src="../image/right-arrow.svg" alt="" />
           </button>
         
-          <div class="carousel-nav">
-            <button class="carousel-indicator current-slide"></button>
-            <button class="carousel-indicator"></button>
-            <button class="carousel-indicator"></button>
-          </div>
+         
         </div>
       </section> 
         
@@ -433,7 +419,7 @@
         <div class="container">
           <div class="text-box develop-desc ">
                 
-                  <p class="text">After identify our persona Olivia's key pain points and goals, which were based on money saving, education and easy navigation of customer portal. From acquired insights which leads us to the next phase ideation process.</p>
+                  <p class="text ">After identify our persona Olivia's key pain points and goals, which were based on money saving, education and easy navigation of customer portal. From acquired insights which leads us to the next phase ideation process.</p>
                 
                 <h3 class="sub_heading">Key pain points to focus on were:</h3>
                   
@@ -489,44 +475,39 @@
               brainstorming sessions and created an MVP matrix to decide on what could achieve and to re-write her stories.
               </p>
             </div>
-        </div>
-   
+          </div>
         </section>
       
      
-            <section class="develop_carousels img_section">
-              <div class="develop-carousel">
-                <button class="carousel-btn develop_carousel_btn-left develop_is-hidden">
+            <section aria-label="Newest Photos" class="develop_carousels img_section">
+              <div class="carousel" data-carousel>
+                <button class="carousel-btn carousel-button prev"  data-carousel-button="prev">
                   <img src="../image/left-arrow.svg" alt="" />
                 </button>
               
-                <div class="develop_carousel_track--container">
-                  <ul class="develop_carousel_track">
-                    <li class="develop_carousel_slide develop_current-slide">
+                <div class="carousel_track-container">
+                  <ul class="develop_carousel_track" data-slides>
+                    <li class="slide" data-active>
                       <img class="develop_carousel-img" src="../image/crazy 8.png" alt="crazy 8" />
                     </li>
-                    <li class="develop_carousel_slide">
+                    <li class="slide">
                       <img class="develop_carousel-img" src="../image/mvp-image.png" alt="mvp" />
                     </li>
               
               
                   </ul>
                 </div>
-                <button class="develop_carousel-btn develop_carousel_btn-right">
+                <button class="develop_carousel-btn carousel-button next" data-carousel-button="next">
                   <img src="../image/right-arrow.svg" alt="" />
                 </button>
               
-                <div class="develop_carousel-nav">
-                  <button class="develop_carousel-indicator develop_current-slide"></button>
-                  <button class="develop_carousel-indicator"></button>
-                </div>
+              
               </div>
             </section>
            
             <section class="text_section">
               <div class="research_grid">
                 <div class="about-heading develop_sum">
-             
                   <h3 class="title">The solutions</h3>
                 </div>
                 <div class="develop_summary">
@@ -536,39 +517,33 @@
                     The storyboard was also developed with two new features which iO Energy could take into consideration for phase two of the development.
                   </p>
                 </div>
-                 
-                
               </div>
-           
-            </section>
+           </section>
             
-            <section class ="develop_carousels img_section">
-                <div class="develop-carousel">
-                  <button class="carousel-btn develop_carousel_btn-left develop_is-hidden">
-                    <img src="../image/left-arrow.svg" alt="" />
-                  </button>
-                
-                  <div class="develop_carousel_track--container">
-                    <ul class="develop_carousel_track">
-                      <li class="develop_carousel_slide develop_current-slide">
-                        <img class="develop_carousel-img" src="../image/userflow.png" alt="Affinity map" />
-                      </li>
-                      <li class="develop_carousel_slide">
-                        <img class="develop_carousel-img" src="../image/IA.png" alt="Empathy map" />
-                      </li>
-                
-                
-                    </ul>
-                  </div>
-                  <button class="develop_carousel-btn develop_carousel_btn-right">
-                    <img src="../image/right-arrow.svg" alt="" />
-                  </button>
-                
-                  <div class="develop_carousel-nav">
-                    <button class="develop_carousel-indicator develop_current-slide"></button>
-                    <button class="develop_carousel-indicator"></button>
-                  </div>
+            <section aria-label="Newest Photos" class="develop_carousels">
+              <div class="carousel" data-carousel>
+                <button class="carousel-button prev " data-carousel-button="prev">
+                  <img src="../image/left-arrow.svg" alt="" />
+                </button>
+            
+                <div class="develop_carousel_track--container">
+                  <ul class="develop_carousel_track" data-slides>
+                    <li class="slide" data-active>
+                      <img class="develop_carousel-img" src="../image/userflow.png" alt="Affinity map" />
+                    </li>
+                    <li class="slide">
+                      <img class="develop_carousel-img" src="../image/IA.png" alt="Empathy map" />
+                    </li>
+            
+            
+                  </ul>
                 </div>
+                <button class="carousel-button next" data-carousel-button="next">
+                  <img src="../image/right-arrow.svg" alt="" />
+                </button>
+            
+            
+              </div>
             </section>
           
             
@@ -595,7 +570,6 @@
                     <div class="deliver-title">
                       Lo-Fi Wireframes
                     </div>
-                  
               </div>
               <div class="deliver">
                     <div class="deliver-step">
@@ -604,7 +578,6 @@
                     <div class="deliver-title">
                      Usability Testing
                     </div>
-                  
               </div>
               <div class="deliver">
                     <div class="deliver-step">
@@ -619,6 +592,7 @@
           </div>
         </div> 
         </section>
+
         <section class="text_section">
           <div class="deliver-desc text-box">
             <p class="text">We worked closely with the stakeholders and usability test participants throughout the whole design sprint process. We were able to design and test
@@ -628,49 +602,35 @@
       </section>
 
         
-            <section class="wireframe_carousels img_section">
-              <div class="wireframe-carousel">
-                <button class="wireframe-btn carousel_btn-left is-hidden">
-                  <img src="../image/left-arrow.svg" alt="" />
-                </button>
-            
-                <div class="wireframe_carousel_track--container">
-                  <ul class="carousel_track">
-                    <li class="wireframe_carousel_slide current-slide">
-                      <img class="wireframe_carousel-img" src="../image/wireframe-home.png" alt="home" />
-                    </li>
-                    <li class="wireframe_carousel_slide">
-                      <img class="wireframe_carousel-img" src="../image/wireframe-billing.png" alt="billing" />
-                    </li>
-                    <li class="wireframe_carousel_slide">
-                      <img class="wireframe_carousel-img" src="../image/wireframe-usage.png" alt="usage" />
-                    </li>
-                    <li class="wireframe_carousel_slide">
-                      <img class="wireframe_carousel-img" src="../image/wireframe-renewables.png" alt="renewable" />
-                    </li>
-                    <li class="wireframe_carousel_slide">
-                      <img class="wireframe_carousel-img" src="../image/wireframe-accounts.png" alt="billing" />
-                    </li>
-            
-            
-                  </ul>
-                </div>
-                <button class="wireframe_carousel-btn carousel_btn-right">
-                  <img src="../image/right-arrow.svg" alt="" />
-                </button>
-            
-                <div class="carousel-nav">
-                  <button class="wireframe_carousel-indicator wireframe_current-slide"></button>
-                  <button class="wireframe_carousel-indicator"></button>
-                  <button class="wireframe_carousel-indicator"></button>
-                  <button class="wireframe_carousel-indicator"></button>
-                  <button class="wireframe_carousel-indicator"></button>
-
-
-
-                </div>
+          <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev " data-carousel-button="prev">
+                <img src="../image/left-arrow.svg" alt="" />
+              </button>
+              <button class="wireframe_carousel-btn carousel-button next" data-carousel-button="next">
+                <img src="../image/right-arrow.svg" alt="" />
+              </button>
+              <div class="carousel_track-container">
+                <ul class="carousel_track" data-slides>
+                  <li class="slide" data-active>
+                    <img class="wireframe_carousel-img" src="../image/wireframe-home.png" alt="home" />
+                  </li>
+                  <li class="slide">
+                    <img class="wireframe_carousel-img" src="../image/wireframe-billing.png" alt="billing" />
+                  </li>
+                  <li class="slide">
+                    <img class="wireframe_carousel-img" src="../image/wireframe-usage.png" alt="usage" />
+                  </li>
+                  <li class="slide">
+                    <img class="wireframe_carousel-img" src="../image/wireframe-renewables.png" alt="renewable" />
+                  </li>
+                  <li class="slide">
+                    <img class="wireframe_carousel-img" src="../image/wireframe-accounts.png" alt="billing" />
+                  </li>
+                </ul>
               </div>
-            </section>
+            </div>
+          </section>
         
     </main>
 
