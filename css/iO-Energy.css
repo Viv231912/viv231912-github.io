@@ -340,6 +340,15 @@ a {
     margin: 0 auto;
 }
 
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: space-around;
+    margin-top: 5rem;
+    text-align: center;
+}
+
 
 
 
@@ -674,8 +683,7 @@ body.open .hamburger .bar:last-child {
 
 /* -----------Discovery Section Styling-------------- */
 
-.discovery-box,
-.define-box {
+.box {
     background-color: var(--bg-color-2);
     padding: 3.75rem 6rem;
     border-radius: 20px;
@@ -719,8 +727,7 @@ body.open .hamburger .bar:last-child {
     text-transform: none;
  font-size: 1rem;
 }
-.p-statement,
-.p-statement2 {
+.statement {
     color: var(--heading-color);
         font-size: 1.5rem;
         letter-spacing: 0.5px;
@@ -744,17 +751,6 @@ body.open .hamburger .bar:last-child {
 }
 
 .grid {
-    grid-template-columns: 1fr auto;
-    justify-content: center;
-    /* column-gap: 5rem;
-    row-gap: 100px; */
-    padding: 2rem 6rem;
-    position: relative;
-}
-
-.research_grid,
-.overview_grid,
-.research_summary_grid {
     position: static;
     display: grid;
     height: auto;
@@ -764,10 +760,8 @@ body.open .hamburger .bar:last-child {
     grid-template-columns: 100%;
 }
 
-.survey_sum,
-.ideation_sum,
-.develop_sum,
-.overview_sum {
+
+.sum {
     position: relative;
     margin: 79px 0px 10px calc((100% - 1055px) * 0.5);
     left: 0px;
@@ -778,18 +772,14 @@ body.open .hamburger .bar:last-child {
 
 
 
-.survey_summary,
-.ideation_summary,
-.develop_summary,
-.overview_summary {
+
+.summary {
     width: 760px;
     height: auto;
 }
 
-.research_grid .survey_summary,
-.research_grid .ideation_summary,
-.research_grid .develop_summary,
-.overview_grid .overview_summary {
+
+.grid .summary {
     position: relative;
     margin: 72px 0px 54px calc((100% - 1055px) * 0.5);
     left: 340px;
@@ -833,8 +823,8 @@ body.open .hamburger .bar:last-child {
 }
 
 .text.res-sum,
-.text.p-statement2 {
-    padding: 0 2rem ;
+.text.statement {
+    padding: 0  2rem;
 
 }
 
@@ -870,15 +860,7 @@ body.open .hamburger .bar:last-child {
     font-weight: normal;
 }
 
-.discovery-wrap {
-    display: grid;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(2, 100px);
-    justify-content: space-around;
-    margin-top: 5rem;
-    text-align: center;
-    
-}
+
 
 .discovery-img {
     width: 100%;
@@ -940,6 +922,7 @@ body.open .hamburger .bar:last-child {
 .text.d-summary  {
     line-height: 1.6;
 }
+
 
 /* --------------Carousel -------------- */
 .carousel {
@@ -1033,9 +1016,11 @@ body.open .hamburger .bar:last-child {
     background: rgba(0, 0, 0, 0.75);
 }
 
-.carousel_track-container {
-    
+.slide .carousel-img {
+    width: 70%;
+    margin: auto;
 }
+
 
 
 
@@ -1128,8 +1113,9 @@ body.open .hamburger .bar:last-child {
 }
 
 .list-container {
-    padding-left: 6rem;
+    padding-left: 4rem;
 }
+
 
 /* -------------HMW section------------------ */
 .hmw-box {
@@ -1251,7 +1237,74 @@ span {
     padding: 2rem;
 } 
 
-/* -------------------Wireframes Section----------------- */
+
+.content-grid {
+    display: flex;
+    grid-template-columns: 500px auto ;
+    justify-content: space-around;
+    align-self: start;
+    margin-top: 5rem;
+}
+
+.video {
+    padding-top: 3rem;
+    width: 80%;
+}
+
+video {
+    width: 100%;
+   
+}
+
+.homepage {
+    object-fit: cover;
+}
+
+.delivery-container {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.delivery-container h3 {
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col {
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-video {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    color: var(--text-color-1);
+    font-size: 1rem;
+    text-align: start;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding-left: 1.2rem;
+}
+
+.delivery-summary .text {
+    line-height: 1.6rem;
+}
+
+video {
+    cursor: pointer;
+}
+
+
 
 
 
