@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myCalendar</title>
+     <!----------Scroll Reveal Library------->
+     <script src="https://unpkg.com/scrollreveal"></script>
+     
+     <!-- --------CSS Files--------- -->
+    <link rel="stylesheet" href="../css/mycalendar.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!----------JavaScript File--------->
+    <script src="../js/mycalendar.js" defer></script>
+    <script src="../js/mixitup.min.js" defer></script>
+    
+
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">Portf<span>olio.</span></a>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="homepage.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!------------------- Showcase-area ---------------------->
+    <section class="showcase-area">
+      <div class="container">
+        <div class="showcase-info">
+          <h1 class="heading">MyCalendar</h1>
+          <h3 class="title">Re-design of MyCalender App</h3>
+          <p class="text">
+            Improve the experience of users whilst interacting with the app.
+          </p>
+        </div>
+
+        <div class="showcase-image">
+          <img src="../image/MyCalendar.png" class="person" alt="myCalendar" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------Overview ------------------>
+    <section class="overview text_section" id="about">
+      <div class="container">
+        <div class="overview-info grid">
+          <div class="sub_heading">
+            <h3 class="title">Overview</h3>
+          </div>
+          <div class="summary">
+            <p class="text">
+              Period tracking apps enable women to understand and follow how
+              their bodies are working. If a user has specific personal goals
+              (such as trying to conceive for childbirth), tracking apps can be
+              extremely useful for determining critical timeframes such as the
+              ovulation window. Existing tracking apps have a number of
+              disadvantages that affect their useability.
+            </p>
+          </div>
+        </div>
+
+        <div class="goal-info grid">
+          <div class="sub_heading">
+            <h3 class="title">Goal</h3>
+          </div>
+          <div class="summary">
+            <p class="text">
+              The goal of this project was to identify the issues with the
+              MyCalendar app and provide effective solutions to improve the
+              experience of users whilst interacting with the app.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-statement grid">
+          <div class="sub_heading">
+            <h3 class="title">Problem Statement</h3>
+          </div>
+          <div class="summary">
+            <p class="text">
+              Users of the existing MyCalendar app are frustrated because they
+              cannot manage their personal information and they also cannot
+              personalise their experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--=============== Discovery Section=============== -->
+    <section class="discovery section">
+      <div class="container">
+        <div class="box">
+          <div class="box-heading">
+            <h1 class="heading">Discovery</h1>
+          </div>
+          <div class="goal row">
+            <div class="col">
+              <h3 class="title">Goal</h3>
+            </div>
+            <div class="summary-col">
+              <p class="text">To understand the current energy industry and users through research.</p>
+            </div>  
+          </div>
+          
+          <div class="wrap">
+            <div class="discovery-process">
+              <div class="discovery-img">
+                <img src="../image/ink-pen 1.png" alt="" class="d-image" />
+              </div>
+              <div class="discovery-title">Survey</div>
+            </div>
+            <div class="discovery-process">
+              <div class="discovery-img">
+                <img src="../image/discussion 1.png" alt="" class="d-image" />
+              </div>
+              <div class="discovery-title">
+                Interview<br/>
+                (+ usability test)
+              </div>
+            </div>
+            <div class="discovery-process">
+              <div class="discovery-img">
+                <img src="../image/search 1.png" class="d-image" />
+              </div>
+              <div class="discovery-title">Competitor Analysis</div>
+            </div>
+            <div class="discovery-process">
+              <div class="discovery-img">
+                <img src="../image/layout 1.png"  class="d-image" />
+              </div>
+              <div class="discovery-title">Landscape Review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+           
+
+    <section aria-label="Newest Photos" class="research_insights-image">
+      <div class="carousel image-container" data-carousel >
+        <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
+          <img src="../image/left-arrow.svg" alt="" />
+        </button>
+      
+        <div class="carousel_track-container">
+          <ul class="carousel_track" data-slides>
+            <li class="slide" data-active>
+              <img class="carousel-img  research-img" src="../image/mycalendar scopingframe.png" alt="scoping framework" />
+            </li>
+            <li class="slide">
+              <img class="carousel-img research-img" src="../image/research plan.png" alt="research plan" />
+            </li>
+            <li class="slide">
+              <img class="carousel-img research-img" src="../image/mycalendar-competitor-analysis.png" alt="competitor analysis" />
+            </li>
+          </ul>
+        </div>
+      
+        <button class="carousel-btn carousel-button next" data-carousel-button="next">
+          <img src="../image/right-arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    
+    <!--------------- Research Finding Summary--------------->
+    <section class="research-finding text_section">
+      <div class="grid container">
+          <div class="about-heading sum">
+            <h3 class="title">Research Findings</h3>
+          </div>
+          <div class="summary container">
+            <p class="text">
+              It was clear that people from different age groups tended to have different expectations of period tracking apps, with the key findings being:
+            </p>
+            <ul class="text">
+              <li>Users in a younger age bracket (typically under 30) were mostly interested in features related to avoiding pregnancy</li>
+              <li>Users between 30-40 were mostly interested in tracking their cycles to maximise their chances of conceiving</li>
+              <li>Users aged above 40 were mostly interested in using the app to provide data that would assist future health/medical consultations</li>
+            </ul>
+            <p class="text">
+              The general consensus amongst the majority of people was that:
+            </p>
+            <ul class="text">
+              <li>Their previous experience with tracking apps was that the app interface could be complicated which made the app challenging and frustrating to us</li>
+              <li>Although a range of different apps are available in the market, there was no single app that catered to all of their needs</li>
+            </ul>
+          </div>
+      </div>
+  </section>
+             
+    
+
+ 
+    
+    <!---------------------Define Section ----------------->
+    <section class="define section">
+      <div class="container">
+        <div class="box">
+          <div class="box-heading">
+            <h1 class="heading">Define</h1>
+          </div>
+            <div class="goal row">
+              <div class="col">
+                <h3 class="title">Goal</h3>
+              </div>
+              <div class="summary-col">
+                <p class="text">Generate insights to define the target users' needs, goals, motivations and frustrations based on research findings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="define-wrap">
+            <div class="d-process">
+              <div class="d-method">
+                <img src="../image/affinity map icon.png" alt="" class="d-image" />
+              </div>
+              <div class="d-title">Affinity Mapping</div>
+            </div>
+            <div class="d-process">
+              <div class="d-method">
+                <img src="../image/Emapthy Map.png" alt="" class="d-image" />
+              </div>
+              <div class="d-title">Empathy Mapping</div>
+            </div>
+            <div class="d-process">
+              <div class="d-method">
+                <img src="../image/Persona.png" alt="" class="d-image" />
+              </div>
+              <div class="d-title">Persona</div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    
+    <section class="research_summary text_section">
+      <div class="container">
+        <div class="text-box d-summary">
+          <p class="text">
+            The data collected from the research was grouped using affinity mapping which allowed a number of key themes to be identified. From the grouping, key insights into the needs of different types of users could be better understood.
+            <br>
+            In conjunction with affinity mapping and personas, empathy mapping was utilised to gain a better understanding of the needs, observations and actions of users of the MyCalendar app. The insights under “Pains” and “Gains” were especially useful in guiding the direction of the future design work.
+          </p>
+          <br>
+          <div class="row">
+            <div class="data_list-container">
+              <h4 class="text">Pains</h4>
+              <ul class="text">
+                <li>Inaccurate cycle predictions</li>
+                <li>Data lost during the transition to new phone</li>
+                <li>Constant pop-up ads</li>
+              </ul>  
+            </div> 
+            <div class="data_list-container">
+              <h4 class="text">Gains</h4>
+              <ul class="text">
+                <li>Want the accuracy of the app to improved.</li>
+                <li>Want to be able to backup data and access it in the future.</li>
+                <li>Be able to use app with any device.</li>
+                <li>Wish to have a personalize option</li>
+              </ul>  
+            </div>   
+          </div>
+      </div>
+      </div>
+ </section>
+   
+   
+ 
+         
+
+    <section aria-label="Newest Photos" class="research_insights-image">
+      <div class="carousel image-container" data-carousel >
+        <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
+          <img src="../image/left-arrow.svg" alt="" />
+        </button>
+      
+        <div class="carousel_track-container">
+          <ul class="carousel_track" data-slides>
+            <li class="slide" data-active>
+              <img class="carousel-img  research-img" src="../image/MyCalendar Affinity Mapping .png" alt="scoping framework" />
+            </li>
+            <li class="slide">
+              <img class="carousel-img research-img" src="../image/mycalendar-affinity map.png" alt="research plan" />
+            </li>
+            <li class="slide" data-active>
+              <img class="carousel-img  research-img" src="../image/mycalendar -Primary Persona.png" alt="scoping framework" />
+            </li>
+            <li class="slide" data-active>
+              <img class="carousel-img  research-img" src="../image/mycalendar Secondary Personas.png" alt="scoping framework" />
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel-btn carousel-button next" data-carousel-button="next">
+          <img src="../image/right-arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+            
+    <div class="section-break-1"></div>
+
+   
+    
+      
+            
+        
+           
+    <!-----------------------------Develop Section  --------------------->
+
+    <section class="develop section"> 
+      <div class="container">
+        <div class="box">
+          <div class="box-heading">
+              <h1 class="heading">Develop</h1>
+          </div>
+          <div class="goal row">
+            <div class="col">
+              <h3 class="title">Goal</h3>
+            </div>
+            <div class="summary-col">
+              <p class="text">To develop concepts for potential solutions based on research insights.
+              </p>
+            </div>
+          </div>
+          <div class="develop-wrap">
+            <div class="develop-method">
+              <div class="develop-step">
+                <img class="develop-img" src="../image/hmw.png" alt="how might we">
+              </div>
+              <div class="develop-title">
+                How Might We
+              </div>
+            </div>
+          <div class="develop-method">
+              <div class="develop-step">
+                <img class="develop-img" src="../image/brainstorming 1.png" alt="ideation">
+              </div>
+              <div class="develop-title">
+                Ideation
+              </div>
+          </div>
+          <div class="develop-method">
+            <div class="develop-step">
+                  <img class="develop-img" src="../image/mvp icon.png" alt="mvp">
+              </div>
+            <div class="develop-title">
+                  MVP
+              </div>
+          </div>
+          <div class="develop-method">
+                <div class="develop-step">
+                  <img class="develop-img" src="../image/User flow icon.png" alt="user flow">
+                </div>
+                <div class="develop-title">
+                  User Flow
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<!--===========HMW==============-->
+  <section class="hmw">
+    <div class="container">
+      <p class="text">A list of <span class="hmw-title_heading">“How might we?”</span>  questions was generated to ensure that the design phase would consider the outcomes of the research in a meaningful way. The questions are below:
+      </p>
+      <div class="hmw-lists">
+        <div class="hmw-list">
+          <div class="hmw-title">How might we</div> 
+          <div class="hmw-desc">increase the efficiency of the MyCalendar app’s UI design for our users and simplify the process for them?
+          </div>
+        </div>
+        <div class="hmw-list">
+          <div class="hmw-title">How might we</div> 
+          <div class="hmw-desc">sync and backup options for our users, so they will be able to access their data across multiple devices?</div>
+        </div>
+          
+        <div class="hmw-list">
+          <div class="hmw-title">How might we</div> 
+          <div class="hmw-desc">personalisation options for our users?</div>
+        </div>
+        <div class="hmw-list">
+          <div class="hmw-title">How might we</div> 
+          <div class="hmw-desc">support our users when their tracking goals and motivations change over time?</div>
+        </div>  
+        <div class="hmw-list">
+          <div class="hmw-title">How might we</div> 
+          <div class="hmw-desc">connect our users with a helpful community forum or discussion board when they want to share their experiences or seek advice from a professional?</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="text_section ideation">
+    <div class="grid container">
+      <div class="about-heading sum ">
+        <h3 class="title">Ideation</h3>
+      </div>
+      <div class="res-sum summary">
+        <p class="text">
+        To address the primary persona Emily's key pain points, brainstorming sessions were conducted to create "How might we?" statements, using techniques such as Crazy 8s and storyboard. These assisted to work through Emily's pain points. The key themes and ideas that came out of the brainstorming sessions were then used to generate an MVP matrix to identify the most important issues and ensure that Emily's needs would be met.
+        </p>
+      </div>
+    </div>p;,
+  </section>
+
+
+
+  <section aria-label="Newest Photos" class="research_insights-image">
+  <div class="carousel image-container" data-carousel >
+    <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
+      <img src="../image/left-arrow.svg" alt="" />
+    </button>
+  
+    <div class="carousel_track-container">
+      <ul class="carousel_track" data-slides>
+        <li class="slide" data-active>
+          <img class="carousel-img  research-img" src="../image/mycalendar Crazy 8s.png" alt="crazy8" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar Storyboard.png" alt="research plan" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar MVP .png" alt="research plan" />
+        </li>
+      </ul>
+    </div>
+  
+    <button class="carousel-btn carousel-button next" data-carousel-button="next">
+      <img src="../image/right-arrow.svg" alt="" />
+    </button>
+  </div>
+  </section> 
+
+  <section class="text_section the-solution">
+    <div class="grid container">
+      <div class="about-heading sum">
+      <h3 class="title">The solutions</h3>
+      </div>
+      <div class="summary">
+      <p class="text">
+        The <span>Card Sorting,</span> <span>User Flow</span> and <span>Information Architecture</span> was developed to ensure that the customer portal fulfilled the requirements of users as defined through the results of the research. The design of the app is intended to be simple to use and allows decisions to be made intuitively by users.
+      </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section aria-label="Newest Photos" class="research_insights-image">
+  <div class="carousel image-container" data-carousel >
+    <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
+      <img src="../image/left-arrow.svg" alt="" />
+    </button>
+  
+    <div class="carousel_track-container">
+      <ul class="carousel_track" data-slides>
+        <li class="slide" data-active>
+          <img class="carousel-img  research-img" src="../image/mycalendar Card Sorting.png" alt="card sorting" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar-user flow.png" alt="user flow" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar-Information Architecture.png" alt="IA" />
+        </li>
+      </ul>
+    </div>
+  
+    <button class="carousel-btn carousel-button next" data-carousel-button="next">
+      <img src="../image/right-arrow.svg" alt="" />
+    </button>
+  </div>
+  </section>
+ 
+ <section class="deliver section">
+  <div class="container">
+    <div class="box">
+      <div class="box-heading">
+        <h1 class="heading">Devlier</h1>
+      </div>
+      <div class="goal row">
+        <div class="col">
+          <h3 class="title">Goal</h3>
+        </div>
+        <div class="summary-col">
+          <p class="text">To design and integrate the UI of new features into the existing myCalendar App.</p>
+        </div>  
+      </div>
+      
+      <div class="wrap">
+        <div class="discovery-process">
+          <div class="discovery-img">
+            <img src="../image/Wireframe.png" alt="" class="d-image" />
+          </div>
+          <div class="discovery-title">Lo-Fi Wireframes</div>
+        </div>
+        <div class="discovery-process">
+          <div class="discovery-img">
+            <img src="../image/Final usability .png" alt="" class="d-image" />
+          </div>
+          <div class="discovery-title">
+            Usability Testing
+          </div>
+        </div>
+        <div class="discovery-process">
+          <div class="discovery-img">
+            <img src="../image/Mid-Hi Prototypes.png" class="d-image" />
+          </div>
+          <div class="discovery-title">Mid-Fi Prototype</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+
+<section class="text_section">
+  <div class="deliver-desc text-box">
+    <p class="text">I worked closely usability test participants throughout the whole design sprint process. I was able to design and test various prototypes with participants. Various changes were made based on learnings throughout the research process and constant validation with participants.</p>
+  </div>
+</section>
+
+<section aria-label="Newest Photos" class="research_insights-image">
+  <div class="carousel image-container" data-carousel >
+    <button class="carousel-btn carousel-button prev" data-carousel-button="prev" >
+      <img src="../image/left-arrow.svg" alt="" />
+    </button>
+  
+    <div class="carousel_track-container">
+      <ul class="carousel_track" data-slides>
+        <li class="slide" data-active>
+          <img class="carousel-img  research-img" src="../image/mycalendar - Wireframes_preliminary.png" alt="wireframe-preliminary" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar-Wireframes_updated .png" alt="user flow" />
+        </li>
+        <li class="slide">
+          <img class="carousel-img research-img" src="../image/mycalendar-Initial Prototype.png" alt="IA" />
+        </li>
+      </ul>
+    </div>
+  
+    <button class="carousel-btn carousel-button next" data-carousel-button="next">
+      <img src="../image/right-arrow.svg" alt="" />
+    </button>
+  </div>
+  </section>
+
+   <!-- Delivery Prototype Section -->
+   <section class="summary_section one">
+    <div class="delivery-container">
+      <div class="row onboarding">
+        <div class="col text-col">
+          <div class="sub-title">
+            <h3 class="text title-text">Task 1: Onboarding</h3>
+            <div class="delivery-summary">
+              <p class="text">
+                Aim: Complete onboarding questions and create an account.
+              </p>
+              <h4 class="text">Results:</h4>
+              <p class="text underline">Area: sequence of the onboarding page</p>
+              <h5 class="text">Feedback:</h5>
+              <p class="text">
+                Participants found that the sequence of the onboarding
+                page was slightly confusing and preferred to have the personal goals
+                page at the beginning of the onboarding part. </p>
+              <h5 class="text">Outcome:</h5>  
+              <p class="text"> The personal goals page was moved to the beginning in the final prototype.
+              </p>
+              <p class="text underline">
+                Area: easy sign up options
+              </p>
+              <h5 class="text">Feedback:</h5>
+              <p class="text">Participants noted that they would like to have quick and easy sign up options, rather than having to go through all of the
+              questionnaire pages.</p>
+              <h5 class="text">Outcome:</h5>
+              <p class="text">
+                 Facebook and Google sign up options were added in the
+                final prototpe. Additionally, a “skip” button was placed on each
+                questionnaire page to provide users the option to bypass the
+                questionnaire and therefore gain instant access.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-img img-col">
+          <img src="../image/mycalendar Onboarding.png" alt="onboarding page">
+        </div>
+      </div>
+   </section>
+   
+   <section class="summary_section two">
+     <div class="delivery-container">
+       <div class="row homepage">
+         <div class="feature-img img-col">
+           <img src="../image/mycalendar-homepage.png" alt="">
+         </div>
+         <div class="col text-col">
+           <div class="sub-title">
+             <h3 class="text title-text">Task 2: homepage</h3>
+             <div class="delivery-summary">
+               <p class="text">
+                 Aim: The app is currently showing the incorrect period day.
+                 Please update this information and enter the correct day.
+               </p>
+               <h4 class="text">Results:</h4>
+               <p class="text underline">Area: complex homepage</p>
+               <h5 class="text">Feedback:</h5>
+               <p class="text">
+                 Participants found that there was too much information
+                 displayed on the homepage.
+               </p>
+               <h5 class="text">Outcome:</h5>  
+               <p class="text"> The homepage was re-designed to make it simpler to navigate and more intuitive for users.
+               </p>
+               <p class="text underline">
+                 Area: edit option
+               </p>
+               <h5 class="text">Feedback:</h5>
+               <p class="text"> Participants found it difficult to find the “edit” option.</p>
+               <h5 class="text">Outcome:</h5>
+               <p class="text">
+                 An “edit” button was added to the homepage. Design and
+                 placement was carefully considered to ensure that users will be able to find it easily.
+               </p>
+               <p class="text underline">
+                 Area: confirmation prompt
+               </p>
+               <h5 class="text">Feedback:</h5>
+               <p class="text"> Participants suggested that it would be helpful to have a notification prompt to confirm the period start day.
+               </p>
+               <h5 class="text">Outcome:</h5>
+               <p class="text">
+                 A confirmation prompt was added to ensure that users are
+                 notified that the information has been updated in the app.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="summary_section one">
+    <div class="delivery-container">
+      <div class="row onboarding">
+        <div class="col text-col">
+          <div class="sub-title">
+            <h3 class="text title-text">Task 3: Community</h3>
+            <div class="delivery-summary">
+              <p class="text">
+                Aim:  Go through the community groups and select one to
+                follow.
+              </p>
+              <h4 class="text">Results</h4>
+              <h5 class="text">Feedback:</h5>
+              <p class="text">
+                Participants found that it was easy to locate the “community” button and navigate groups. Participants suggested that they would like to have a “share” option so that users will be able to share interesting topics and
+                articles with their friends. Participants also suggested that it would be good to have a “bookmark” option to make it easier to locate interesting items in the future.
+              </p>
+              <h5 class="text">Outcome:</h5>  
+              <p class="text">  “Share” and “boomark” options were implemented in the final
+                prototype.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-img img-col">
+          <img src="../image/mycalendar-community.png  " alt="onboarding page">
+        </div>
+      </div>
+    </section>
+
+    <section class="summary_section two">
+      <div class="delivery-container">
+        <div class="row homepage">
+          <div class="feature-img img-col">
+            <img src="../image/mycalendar-setting.png" alt="">
+          </div>
+          <div class="col text-col">
+            <div class="sub-title">
+              <h3 class="text title-text">Task 4: Settings</h3>
+              <div class="delivery-summary">
+                <p class="text">
+                  Aim:  Backup tracked data and export to your
+                  doctor for your next appointment.
+                </p>
+                <h4 class="text">Results</h4>
+                <h5 class="text">Feedback:</h5>
+                <p class="text">
+                  Participants found that the process
+                  of backing up files and transferring data was
+                  relatively easy. However, participants noted
+                  that the backup locations were not clear.
+                </p>
+                <h5 class="text">Outcome:</h5>  
+                <p class="text">  A prompt for selection of backup
+                  locations and a confirmation button have been
+                  added to the final prototype. The prompt
+                  appears before completion of backup.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary_section one ">
+      <div class="delivery-container">
+        <div class="row prototype">
+          <div class="col text-col">
+            <div class="summary prototype-summary">
+              <h3 class="text title-text">Final Prototype</h3>
+              <div class="delivery-summary">
+                <p class="text">
+                  After multiple iterations and incroporating all the suggestion from usability test participants. Here is the final working mid-fedlity prototype.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-video video-col">
+           <video src="../video/mycalendar-prototype.mp4" autoplay loop></video>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="text_section the-solution">
+        <div class="grid container">
+          <div class="about-heading sum">
+          <h3 class="title">Conclusion</h3>
+          </div>
+          <div class="summary">
+          <p class="text">
+            This project was implemented to address issues with the existing MyCalendar app that have caused frustration
+            to users.
+            <br>
+            <br>
+            The research gave a valuable insight into these concerns from the perspective of users. It provided the basis
+            for the future design changes, responding to difficulties with the existing architecture of the app as well as
+            addition of new functions and features.
+            <br>
+            <br>
+            The usability testing was extremely useful and enable the prototype to be refined, ensuring that the goals of
+            the project were realised.
+            <br>
+            <br>
+            As a result of the work undertaken, the MyCalendar app now has improved functionality and will better meet
+            the needs of users.
+          </p>
+          </div>
+        </div>
+      </section>
+      
+          <footer>
+            <div class="container">
+                <a href="#" class="logo">Portf<span>olio.</span></a>
+                <p class="text">&copy; Copyright 2022. All rights reserved</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.linkedin.com/in/vivian-chen-9a9155108/" target="_blank" class="social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Viv231912" target="_blank" class="social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          </footer>
+            
+            
+            
+                
+              
+                  
+                  
+                  
+                  
+                  
+                  
+                
+                  
+                  
+               
+              
+                
+       
+         
+          
+                  
+                  
+                  
+                  
+      
+
+ 
+  
+                
+                
+          
+           
+           
+         
+                
+
+
+
+
+              
+              
+      
+       
+
+ 
+
+
+  
+      
+ 
+
+
+
+ 
+
+
+
+          
+   
+      
+ 
+   
+           
+        
+          
+    
+    
+   
+
+
+    
+
+        
+  
+    
+    
+
+
+
+
+      
+      
+
+
+
+
+     
+
+            
+            
+            
+            
+            
+            
+           
+     
+      
+      
+      
+   
+    
+           
+  
+        
+  
+    
+   
+      
+                 
+               
+          
+   
+
+     
+
+
+     
+     
+   
+  
+
+
+
+  </body>
+</html>
